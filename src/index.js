@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -9,7 +9,7 @@ const Message = (props) => {
   return <div className = 'message'>{props.message}</div>
 }
 
-const App = () => {
+const App1 = () => {
   const message = "Message text";
   return <div className = 'app'>
     <Message message = {message}/>
@@ -19,6 +19,7 @@ const App = () => {
 
 ReactDOM.render(
   <React.StrictMode>
+    <App1/>
     <App/>
   </React.StrictMode>,
   document.getElementById('root')
